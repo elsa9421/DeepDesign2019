@@ -14,7 +14,7 @@ IMAGE_SIZE=$11
 #cd 2D_3D_style_dream_neural_renderer/
 cd 2d_3d_style_dream_neural_renderer
 
-python run_examples_style_transfer_3d/run.py \
+python ./run_examples_style_transfer_3d/run.py \
     --filename_mesh ${INPUT_OBJ_PATH} \
     --filename_style ${INPUT_2D_PATH} \
     --filename_output ${OUTPUT_DIR}/${OUTPUT_FILENAME} \
@@ -24,5 +24,4 @@ python run_examples_style_transfer_3d/run.py \
 	--lr_vertices ${LR_VERTICES} \
 	--lr_textures ${LR_TEXTURES} \
 	--texture_size ${TEXTURE_SIZE} \
-	--image_size ${IMAGE_SIZE}
-	
+	--image_size ${IMAGE_SIZE} 
